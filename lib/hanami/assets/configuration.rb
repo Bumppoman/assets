@@ -5,7 +5,7 @@ require "json"
 require "hanami/utils/string"
 require "hanami/utils/class"
 require "hanami/utils/path_prefix"
-require "hanami/utils/basic_object"
+# require "hanami/utils/basic_object"
 require "hanami/assets/config/manifest"
 require "hanami/assets/config/sources"
 
