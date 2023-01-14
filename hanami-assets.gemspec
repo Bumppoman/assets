@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.metadata["rubygems_mfa_required"] = "true"
   spec.required_ruby_version = '>= 3.0'
 
-  spec.add_runtime_dependency 'hanami-utils',    '~> 1.3'
+  spec.add_runtime_dependency 'hanami-utils',    '~> 2.0'
   spec.add_runtime_dependency 'hanami-helpers',  '~> 1.3'
   spec.add_runtime_dependency 'tilt',            '~> 2.0', '>= 2.0.2'
 
