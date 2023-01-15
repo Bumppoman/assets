@@ -9,7 +9,7 @@ module Hanami
     #
     # @since 0.1.0
     # @api private
-    module Config
+    module AssetConfig
       # Source directories for a specific application
       #
       # @since 0.1.0
