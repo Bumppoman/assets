@@ -28,13 +28,13 @@ module Hanami
     #
     # @since 0.1.0
     # @api private
-    module Config
+    module AssetConfig
       # Default value for configuration's manifest.
       #
       # It indicates that the manifest wasn't loaded yet.
       #
       # At the load time, this should be replaced by an instance of
-      # <tt>Hanami::Assets::Config::Manifest</tt>.
+      # <tt>Hanami::Assets::AssetConfig::Manifest</tt>.
       #
       # If for some reason that won't happen, the instance of this class is
       # still referenced by the configuration and all the method invocations
@@ -51,7 +51,7 @@ module Hanami
         #
         # @param configuration [Hanami::Assets::Configuration]
         #
-        # @return [Hanami::Assets::Config::NullManifest] a new instance
+        # @return [Hanami::Assets::AssetConfig::NullManifest] a new instance
         #
         # @since 0.1.0
         # @api private
@@ -96,7 +96,7 @@ module Hanami
         # @param assets [Hash] the content of the manifest
         # @param manifest_path [Pathname] the path to the manifest
         #
-        # @return [Hanami::Assets::Config::Manifest] a new instance
+        # @return [Hanami::Assets::AssetConfig::Manifest] a new instance
         #
         # @since 0.1.0
         # @api private
