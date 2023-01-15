@@ -6,8 +6,8 @@ require "hanami/utils/string"
 require "hanami/utils/class"
 require "hanami/utils/path_prefix"
 # require "hanami/utils/basic_object"
-require "hanami/assets/config/manifest"
-require "hanami/assets/config/sources"
+require "hanami/assets/asset_config/manifest"
+require "hanami/assets/asset_config/sources"
 
 module Hanami
   module Assets
@@ -382,7 +382,7 @@ module Hanami
       # @since 0.1.0
       # @api private
       def sources
-        @sources ||= Hanami::Assets::Config::Sources.new(root)
+        @sources ||= Hanami::Assets::AssetConfig::Sources.new(root)
       end
 
       # Application's assets
@@ -546,7 +546,7 @@ module Hanami
         @nested                = false
         @base_url              = nil
         @destination_directory = nil
-        @public_manifest       = Config::NullManifest.new(self)
+        @public_manifest       = AssetConfig::NullManifest.new(self)
 
         @javascript_compressor = nil
         @stylesheet_compressor = nil
@@ -564,7 +564,7 @@ module Hanami
       # @api private
       def load!
         if (fingerprint || subresource_integrity) && manifest_path.exist?
-          @public_manifest = Config::Manifest.new(
+          @public_manifest = AssetConfig::Manifest.new(
             JSON.parse(manifest_path.read),
             manifest_path
           )
