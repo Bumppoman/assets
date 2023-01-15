@@ -8,7 +8,7 @@ module Hanami
     #
     # @since 0.1.0
     # @api private
-    module Config
+    module AssetConfig
       # Global asset sources across all the duplicated <tt>Hanami::Assets</tt>
       # instances.
       #
