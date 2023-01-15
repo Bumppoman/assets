@@ -20,7 +20,7 @@ module Hanami
 
     require "hanami/assets/version"
     require "hanami/assets/configuration"
-    require "hanami/assets/config/global_sources"
+    require "hanami/assets/asset_config/global_sources"
     require "hanami/assets/helpers"
 
     include Utils::ClassAttribute
